@@ -1,0 +1,26 @@
+<?php
+
+$today = date('l');
+$month_day = date('F jS');
+
+?>
+<Response>
+<Say>Welcome to Crisp on Wheels.</Say>
+<Say>Today is <?php echo $today.$month_day; ?>.</Say>
+<Say>We are located on:</Say>
+<Say><?php
+if ($today == 'Monday') {
+    echo "Hudson and King.";
+} else if ($today == 'Tuesday') {
+    echo "49th and 6th";
+} else if ($today == 'Wednesday') {
+    echo "53rd between Madison and Park.";
+} else if ($today == 'Thursday') {
+    echo "50th and 6th.";
+} else if ($today == 'Friday') {
+    echo "46th and 6th.";
+} else {
+    echo "We are closed.";
+}
+?></Say>
+</Response>

@@ -1,0 +1,46 @@
+    <div id="rightColumn">
+    	<div id="menuTitle">
+        	Twitter
+        </div>
+        <div id="sideContent">
+			<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+            <script>
+            new TWTR.Widget({
+              version: 2,
+              type: 'profile',
+              rpp: 2,
+              interval: 6000,
+              width: 180,
+              height: 180,
+              theme: {
+                shell: {
+                  background: '#bfb7ae',
+                  color: '#ffffff'
+                },
+                tweets: {
+                  background: '#bfb7ae',
+                  color: '#ffffff',
+                  links: '#e3e3e3'
+                }
+              },
+              features: {
+                scrollbar: true,
+                loop: false,
+                live: true,
+                hashtags: true,
+                timestamp: true,
+                avatars: false,
+                behavior: 'all'
+              }
+            }).render().setuser('ThePocketful').start();
+            </script>
+        </div>
+        
+        <div id="menuTitle">
+        	Facebook
+        </div>
+        <div id="sideFacebook">
+        	<iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fthepocketful&amp;width=190&amp;colorscheme=light&amp;show_faces=true&amp;stream=false&amp;header=false&amp;height=300" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:190px; height:300px;" allowTransparency="true"></iframe>
+        </div>
+        
+    </div>
